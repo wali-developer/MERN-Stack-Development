@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+
+    <style>
+      body {
+        background-image: url("./images/image.webp");
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+      }
+
+      .parent {
+        width: 800px;
+        margin: 50px auto;
+        height: 300px;
+        background-color: lightgray;
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .child {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(255, 148, 148);
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 148, 148);
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <!-- <div class="child"></div> -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box" style="width: 300px">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box" style="flex-grow: 1">10</div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout</title>
+  </head>
+
+  <style>
+    .common {
+      border: 2px solid lightgray;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    aside {
+      width: 100px;
+      height: 360px;
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+  </style>
+  <body>
+    <header class="common">Header</header>
+    <div class="wrapper">
+      <aside class="common">Side Bar</aside>
+      <main class="common">Main</main>
+      <aside class="common">Side Bar</aside>
+    </div>
+    <footer class="common">Footer</footer>
+  </body>
+</html>

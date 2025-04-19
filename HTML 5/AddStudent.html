@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student</title>
+    <style>
+      input {
+        display: block;
+        width: 100%;
+        margin-top: 7px;
+        padding: 7px 15px;
+      }
+
+      .inputWrapper {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Add Student</h3>
+    <form>
+      <div class="inputWrapper">
+        <label id="name">Name</label>
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+      <div class="inputWrapper">
+        <label id="name">Email</label>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+      <div class="inputWrapper">
+        <label id="name">Contact</label>
+        <input type="number" placeholder="Enter your number" />
+      </div>
+      <div class="inputWrapper">
+        <label>Class</label>
+        <select>
+          <option>5th</option>
+          <option>6th</option>
+          <option>7th</option>
+          <option>8th</option>
+          <option>9th</option>
+          <option>10th</option>
+        </select>
+      </div>
+      <p>Select eligiblity</p>
+      <div class="inputWrapper">
+        <label for="yes">Yes</label>
+        <input type="checkbox" id="yes" />
+      </div>
+      <div>
+        <label for="no">No</label>
+        <input type="checkbox" id="no" />
+      </div>
+
+      <div>
+        <label>Do you want to enroll now?</label>
+        <div>
+          <label>Yes</label>
+          <input type="radio" name="entrollment" />
+        </div>
+        <div>
+          <label>No</label>
+          <input type="radio" name="entrollment" />
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
