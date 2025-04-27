@@ -15,9 +15,13 @@ const studentSchema = mongoose.Schema(
       type: Number,
       default: null,
     },
+    enrollNumber: {
+      type: Number,
+      required: true,
+    },
     grade: {
       type: String,
-      required: true,
+      default: null,
     },
     address: {
       type: String,
